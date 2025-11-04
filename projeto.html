@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projetos — ONG Educar</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">Educar<span class="brand-accent">+</span></a>
+      <button id="menuToggle" class="menu-toggle" aria-label="Abrir menu">☰</button>
+      <nav id="mainNav" class="main-nav" aria-label="Principal">
+        <ul>
+          <li><a href="index.html" class="nav-link">Início</a></li>
+          <li><a href="projeto.html" class="nav-link active">Projetos</a></li>
+          <li><a href="cadastro.html" class="nav-link">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap main-grid">
+    <section class="col-12">
+      <div class="controls">
+        <label for="filter">Filtrar:</label>
+        <select id="filter">
+          <option value="todos">Todos</option>
+          <option value="meioambiente">Meio Ambiente</option>
+          <option value="comunidade">Comunidade</option>
+          <option value="inovacao">Inovação</option>
+        </select>
+        <button id="btnNew" class="btn outline">Novo (demo)</button>
+        <img src= "Imagens/projeto 7.jpg" alt="Equipe da ONG Educar com Esperança" class="imagem-index">
+      </div>
+    </section>
+
+    <section id="projectsGrid" class="grid-cards col-12" aria-live="polite">
+      <!-- cards são renderizados por JS -->
+    </section>
+
+    <!-- Modal simples de visualização -->
+    <div id="modal" class="modal" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+        <button id="modalClose" class="modal-close" aria-label="Fechar">×</button>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+        <div class="modal-meta">
+          <span class="tag" id="modalTag"></span>
+          <button id="modalApply" class="btn primary small">Participar</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap"><p>© 2025 ONG Educar</p></div>
+  </footer>
+
+  <div id="toast" class="toast" aria-live="polite" hidden></div>
+  <script src="script.js"></script>
 </body>
 </html>

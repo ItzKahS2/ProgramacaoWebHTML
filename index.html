@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ONG Educar — Início</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">Educar<span class="brand-accent">+</span></a>
+
+      <button id="menuToggle" class="menu-toggle" aria-label="Abrir menu">☰</button>
+
+      <nav id="mainNav" class="main-nav" aria-label="Principal">
+        <ul>
+          <li><a href="index.html" class="nav-link active">Início</a></li>
+          <li class="has-sub">
+            <a href="#" class="nav-link">Sobre ▾</a>
+            <ul class="submenu">
+              <li><a href="index.html#missao">Missão</a></li>
+              <li><a href="index.html#valores">Valores</a></li>
+            </ul>
+          </li>
+          <li><a href="projeto.html" class="nav-link">Projetos</a></li>
+          <li><a href="cadastro.html" class="nav-link">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap main-grid">
+    <section class="hero col-12">
+      <div class="hero-text">
+        <h1>ONG Educar — Transformando Vidas</h1>
+        <p class="lead">Projetos sociais, voluntariado e captação de recursos para educação.</p>
+        <div class="cta">
+          <a class="btn primary" href="cadastro.html">Cadastre-se</a>
+          <a class="btn outline" href="projeto.html">Ver projetos</a>
+        </div>
+      </div>
+      <div class="hero-media" aria-hidden="true">
+        <img src= "Imagens/projeto 4.jpg" alt="Equipe da ONG Educar com Esperança" class="imagem-index">
+      </div>
+    </section>
+
+    <section id="missao" class="col-8 about">
+      <h2>Missão</h2>
+      <p>Promover educação, inclusão e cidadania em comunidades de baixa renda.</p>
+    </section>
+
+    <aside class="col-4 stats">
+      <h3>Indicadores</h3>
+      <ul>
+        <li><strong id="numParticipantes">0</strong> participantes</li>
+        <li><strong id="metasAlcancadas">0</strong> metas alcançadas</li>
+        <li><strong id="resultados">0</strong> resultados reportados</li>
+      </ul>
+    </aside>
+
+    <section id="valores" class="col-12">
+      <h2>Valores</h2>
+      <p>Transparência — Inclusão — Colaboração — Impacto</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2025 ONG Educar — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" aria-live="polite" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
