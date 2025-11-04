@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+<<<<<<< HEAD
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Projetos — ONG Educar</title>
@@ -62,3 +63,82 @@
   <script src="script.js"></script>
 </body>
 </html>
+=======
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONG Educar com Esperança</title>
+  <link rel="stylesheet" href="style.css">
+<main>
+  <!-- Gestão de Projetos -->
+  <section>
+    <h2>Cadastro de Projetos Sociais</h2>
+    <form id="formProjeto">
+      <input type="text" id="nomeProjeto" placeholder="Nome do projeto" required>
+      <input type="text" id="categoriaProjeto" placeholder="Categoria" required>
+      <input type="text" id="descricaoProjeto" placeholder="Descrição detalhada" required>
+      <button type="submit">Cadastrar Projeto</button>
+    </form>
+    <h3>Galeria</h3>
+    <div class="galeria-container">
+    <img src="imagens/projeto 5.jpg" alt="Projeto 1">
+    <img src="imagens/Projeto 6.jpg" alt="Projeto 2">
+    <img src="imagens/projeto 3.jpg" alt="Projeto 3">
+    <img src="imagens/projeto 4.jpg" alt="Projeto 4">
+  </div>
+    <h3>Indicadores de Impacto</h3>
+  <ul class="indicadores-impacto">
+    <li><strong>Número de participantes:</strong> 1.250 pessoas atendidas</li>
+    <li><strong>Metas alcançadas:</strong> 95% das metas de alfabetização cumpridas</li>
+    <li><strong>Resultados obtidos:</strong> 87% de aprovação dos participantes nos programas educativos, 70% engajamento voluntário contínuo obtidos.</li>
+  </section>
+
+  <!-- Engajamento de Voluntários -->
+  <section>
+    <h2>Oportunidades de Voluntariado</h2>
+    <ul id="listaOportunidades">
+      <li>Projeto Ler para Crescer — Incentivo à leitura infantil</li>
+      <li>Capacita Jovem — Cursos de capacitação profissional</li>
+    </ul>
+    <h3>Histórico do Voluntário</h3>
+    <ul id="historicoVoluntario">
+      <li>(Histórico de participação do usuário logado)</li>
+    </ul>
+    <p>Certificados digitais de participação disponíveis após conclusão de atividades.</p>
+  </section>
+
+  <!-- Captação de Recursos -->
+  <section>
+    <h2>Campanhas de Arrecadação e Doações</h2>
+    <form id="formDoacao">
+      <input type="number" id="valorDoacao" placeholder="Valor da doação (R$)" min="1" required>
+      <button type="submit">Doar</button>
+    </form>
+    <p id="msgDoacao" class="mensagem"></p>
+    <p>Metas e progresso em tempo real serão exibidos aqui.</p>
+    <a href="#" class="btn">Ver Relatórios de Prestação de Contas</a>
+  </section>
+  <section class="captacao-recursos">
+  <h2>Campanhas de Arrecadação e Doações</h2>
+
+  <!-- Formulário de doação online -->
+  <form id="formDoacao">
+    <input type="number" id="valorDoacao" placeholder="Valor da doação (R$)" min="1" required>
+    <button type="submit">Doar</button>
+  </form>
+  <p id="msgDoacao" class="mensagem"></p>
+
+  <!-- Metas e progresso em tempo real -->
+  <div class="metas-progresso">
+    <h3>Metas e Progresso em Tempo Real</h3>
+    <p>Meta da campanha: R$ 10.000</p>
+    <div class="barra-container">
+      <div id="barraProgresso" class="barra"></div>
+    </div>
+    <p id="porcentagemProgresso">0%</p>
+  </div>
+
+  <!-- Relatórios de prestação de contas -->
+  <a href="#" class="btn">Ver Relatórios de Prestação de Contas</a>
+</section>
+</main>
+>>>>>>> e6521d6a9d5d3100e68fc329f9abfdde7393de16
