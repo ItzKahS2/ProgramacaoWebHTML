@@ -186,7 +186,7 @@ function openModal(p){
 }
 function closeModal(){
   const modal = document.getElementById('modal');
-  if(!modal) return;
+  if(!modal) return; //...
   modal.classList.remove('show');
   modal.setAttribute('aria-hidden','true');
 }
